@@ -26,7 +26,7 @@ int main()
      write(1,buffer,n);
   }
 }
-void conversion()
+void conversion(string &str)
 {
   int l=str.length();
   for(int i=0; i<l; i++)
@@ -43,8 +43,8 @@ void conversion()
 }
 int main()
 {
-   String str=”Hi There”;
+   string str=”Hi There”;
    conversion(str);
-   cout<<str;
+   printf("Converted String is %s",str);
    return 0;
 }
